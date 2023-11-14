@@ -89,30 +89,11 @@ body, html {
 
 <!-- End page content -->
 </div>
-
+<form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
   <p>All Rights Reserved Slomo Records 2023</p>
 
 </footer>
-
-<script>
-// Tabbed news
-function opennews(evt, newsName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("news");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(newsName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-}
-document.getElementById("myLink").click();
-</script>
-
 </body>
 </html>
