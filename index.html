@@ -36,10 +36,10 @@ body, html {
       <a href="#about" class="w3-button w3-block w3-black">About</a>
     </div>
     <div class="w3-col s3">
-      <a href="#news" class="w3-button w3-block w3-black">News</a>
+      <a href="#contact" class="w3-button w3-block w3-black">Contact</a>
     </div>
     <div class="w3-col s3">
-      <a href="#contact" class="w3-button w3-block w3-black">Contact us</a>
+      <a href="https://slomorecords.bandcamp.com" class="w3-button w3-block w3-black">Bandcamp</a>
     </div>
   </div>
 </div>
@@ -79,56 +79,6 @@ body, html {
   </div>
 </div>
 
-<!-- news Container -->
-<div class="w3-container" id="news">
-  <div class="w3-content" style="max-width:700px">
- 
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">NEWS</span></h5>
-    <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="opennews(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">Released</div>
-      </a>
-      <a href="javascript:void(0)" onclick="opennews(event, 'Drinks');">
-        <div class="w3-col s6 tablink">Events</div>
-      </a>
-    </div>
-
-    <div id="Eat" class="w3-container news w3-padding-48 w3-card">
-      <h5>Sheela - Anarchy in Versailles</h5>
-      <p class="w3-text-grey">Out Friday 13th October</p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p>
-    </div>
-
-    <div id="Drinks" class="w3-container news w3-padding-48 w3-card">
-      <h5>Sheela HMV Belfast Single Launch 14th October 2023</h5>
-      <p class="w3-text-grey">Sound by Finn Martin Audio</p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p>
-    </div>  
-  </div>
-</div>
-
 <!-- Contact/Area Container -->
 <div class="w3-container" id="contact" style="padding-bottom:32px;">
   <div class="w3-content" style="max-width:700px">
@@ -137,32 +87,46 @@ body, html {
   </div>
 </div>
 
+<div class="container">
+  <center>  
+  <h1>Contact Form</h1>
+  <form target="_blank" action="https://formsubmit.co/6da13cf28d9e215ec53a726c46020341" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value ="https://slomorecords.com/#contact"
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+          <p></p>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+          <p>ㅤ</p>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+    <center> 
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+    </center>
+    </div>
+  <p>ㅤ</p>
+  <center>   
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+  </center>
+  </form>
+</center>
+</div>
+  
 <!-- End page content -->
 </div>
 
+
+  
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
   <p>All Rights Reserved Slomo Records 2023</p>
 
 </footer>
-
-<script>
-// Tabbed news
-function opennews(evt, newsName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("news");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(newsName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-}
-document.getElementById("myLink").click();
-</script>
-
 </body>
 </html>
